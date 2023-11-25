@@ -6,10 +6,25 @@ using UnityEngine;
 
 public class ProjectileWeaponBehaviour : MonoBehaviour
 {
+    public WeaponScriptableObject weaponData;
+
 
     protected Vector3 direction;
     public float destroyAfterSeconds;
 
+    //Aktuelle Werte
+    protected float currentDamage;
+    protected float currentSpeed;
+    protected float currentCooldownDuration;
+    protected int currentPierce;
+
+    private void Awake()
+    {
+        currentDamage = weaponData.Damage;
+        currentSpeed = weaponData.Speed;
+        currentCooldownDuration = weaponData.CooldownDuration;
+        currentPierce = weaponData.Pierce;
+    }
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -64,5 +79,22 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         }
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation); // cant convert quaternion to vector 3
+    }
+    protected virtual void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.CompareTag("Enemy"))
+        {
+            ZombieStats enemy = col.GetComponent<ZombieStats>();
+            enemy.TakeDamage(currentDamage);
+            ReducePierce();
+        }
+    }
+    void ReducePierce() //Projektil geht kaputt, nachdem es eine gewisse Anzahl an Gegnern getroffen hat
+    {
+        currentPierce--;
+        if (currentPierce <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

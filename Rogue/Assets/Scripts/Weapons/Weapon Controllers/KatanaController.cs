@@ -13,7 +13,7 @@ public class KatanaController : WeaponController
    protected override void Attack()
     {
         base.Attack();
-        GameObject spawnedKatana = Instantiate(prefab);
+        GameObject spawnedKatana = Instantiate(weaponData.Prefab);
         spawnedKatana.transform.position = transform.position; //Assign same position as parent
         spawnedKatana.GetComponent<KatanaBehaviour>().DirectionChecker(pm.lastMovedVector); //Reference and set direction
     }
