@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     [HideInInspector]
     public Vector2 moveDir;
+    [HideInInspector]
+    public Vector2 lastMovedVector;
 
 
 
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        lastMovedVector = new Vector2(1, 0f);
     }
 
     // Update is called once per frame
@@ -40,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", moveDir.sqrMagnitude);
 
         moveDir = new Vector2(moveX, moveY).normalized;
+        if (moveDir != Vector2.zero)
+        {
+            lastMovedVector = moveDir;
+        }
 
     }
 
