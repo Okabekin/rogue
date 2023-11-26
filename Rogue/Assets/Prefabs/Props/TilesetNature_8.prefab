@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 895449381186388871}
   - component: {fileID: 2426072300380288294}
   - component: {fileID: -7008041465873331661}
+  - component: {fileID: 6333622904572093131}
+  - component: {fileID: 6990752008097992483}
   m_Layer: 0
   m_Name: TilesetNature_8
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +132,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6333622904572093131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979546404517956359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5dfa7616f2af945811e724718eb33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &6990752008097992483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979546404517956359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4f4310b9dde3648b86d386904db3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: RedPotion
+    itemPrefab: {fileID: 1688246741176697306, guid: 55d6d10ae94783b49bc85c17bed791da, type: 3}
+    dropRate: 50

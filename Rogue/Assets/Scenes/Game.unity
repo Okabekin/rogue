@@ -365,6 +365,8 @@ GameObject:
   - component: {fileID: 1516785034}
   - component: {fileID: 1516785033}
   - component: {fileID: 1516785038}
+  - component: {fileID: 1516785039}
+  - component: {fileID: 1516785040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -385,9 +387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1516785038}
-  moveSpeed: 5
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: 825ed107f6950c44bb6bb0fe5f84a782, type: 2}
 --- !u!61 &1516785034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -550,6 +552,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1516785039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516785032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728130c493966c843aba1b311f42f16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 825ed107f6950c44bb6bb0fe5f84a782, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 0
+  invincibilityDuration: 0.5
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapIncrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapIncrease: 200
+--- !u!114 &1516785040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516785032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee0698cf85b823458d4c136e060fdd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2096700992
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5823658371815560272, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
       propertyPath: m_Name
@@ -711,6 +749,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 5477544225043772735, guid: 1a31a6d67f2513847abc6dac253fcdf2, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 5504633416022328194, guid: 477ebb2ce67d0944aa6421e307c884c6, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1380969405949296454, guid: 19d8596b48e2360478ce47dc09c47a9d, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 1386728683721052868, guid: 88cb4bed267f7da43828ef1c7e8e8356, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 5816059556808111201, guid: 447493a19c4da074eab41d57f0c3051a, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 3724646775002914638, guid: 18f4b5703c00a2945a364d5d7afdfb7c, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 5160323086411217874, guid: 2ab9ae1761d12a14e8d3321ccf8ee207, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 450646676044872921, guid: 5dc28dc79923b114aaefa8588e234cbf, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: 3979546404517956359, guid: d3ceeb0a54599344dad89011c9f8025a, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: 4820183533498832755, guid: 7a4219f6ae89eb547958b91fe12f23e9, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[10]
+      value: 
+      objectReference: {fileID: 7888515816893354826, guid: 8cf22af5af04b2549acc3b16e3124e70, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[11]
+      value: 
+      objectReference: {fileID: 4377915000960165925, guid: 16e651ee2c339064981e36ce94466ef7, type: 3}
+    - target: {fileID: 980584123947811234, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
+      propertyPath: propPrefabs.Array.data[12]
+      value: 
+      objectReference: {fileID: 2798130855344967630, guid: cb8499564a652914f991b11d1356ffec, type: 3}
     - target: {fileID: 2091311082116224463, guid: bdd05798c0884b84eaf8c40fc3565a2b, type: 3}
       propertyPath: m_Name
       value: TerrainChunk

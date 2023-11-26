@@ -21,6 +21,15 @@ public class GarlicBehaviour : MeleeWeaponBehaviour
 
             markedEnemies.Add(col.gameObject); //Gegner wird markiert und kann nicht mit diesem Garlic wieder beschaedigt werden
         }
+        else if (col.CompareTag("Prop"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
+            {
+                breakable.TakeDamage(currentDamage);
+                
+                markedEnemies.Add(col.gameObject) ;
+            }
+        }
     }
 
 }

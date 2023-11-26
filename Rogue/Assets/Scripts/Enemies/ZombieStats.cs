@@ -30,4 +30,14 @@ public class ZombieStats : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void OnCollisionStay2D(Collision2D col)
+    {
+        //Reference script from collided collider and deal damag using take dmg
+        if (col.gameObject.CompareTag("Player"))
+        {
+            PlayerStats player = col.gameObject.GetComponent<PlayerStats>();  
+            player.TakeDamage(currentDamage); //current dmg in case of multipliers
+        }
+    }
 }

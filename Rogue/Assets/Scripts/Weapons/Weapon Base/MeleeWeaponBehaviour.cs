@@ -38,6 +38,14 @@ public class MeleeWeaponBehaviour : MonoBehaviour
             ZombieStats enemy = col.GetComponent<ZombieStats>();
             enemy.TakeDamage(currentDamage);
         }
+        else if (col.CompareTag("Prop"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable))
+            {
+                breakable.TakeDamage(currentDamage);
+               
+            }
+        }
     }
 
 

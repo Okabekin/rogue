@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1600905630897487690}
   - component: {fileID: 3110112765293204486}
   - component: {fileID: 5823658371815560272}
+  - component: {fileID: 7063520038188268630}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -167,3 +168,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: f5ca1f7468ffb9b4c949328977df61fb, type: 2}
   moveDir: {x: 0, y: 0}
+--- !u!114 &7063520038188268630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8942853501490592335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4f4310b9dde3648b86d386904db3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue gem
+    itemPrefab: {fileID: 2095108835819877079, guid: 1c468e81c3da2274db07d3d9cd427c81, type: 3}
+    dropRate: 100
