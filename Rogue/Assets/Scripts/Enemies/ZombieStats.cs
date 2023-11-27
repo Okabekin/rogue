@@ -63,7 +63,7 @@ public class ZombieStats : MonoBehaviour
     private void OnDestroy()
     {
         EnemySpawner es = FindObjectOfType<EnemySpawner>();
-        es.OnEmeyKilled();
+        es.OnEnemyKilled();
     }
     void ReturnEnemy()
     {

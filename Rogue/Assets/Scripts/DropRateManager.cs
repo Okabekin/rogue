@@ -17,6 +17,11 @@ public class DropRateManager : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (!gameObject.scene.isLoaded) //stops spawning error from appearing when stopping game view
+        {
+            return;
+        }
+
         float randomNumber = UnityEngine.Random.Range(0f, 100f);
         List<Drops> possibleDrops = new List<Drops>();
 

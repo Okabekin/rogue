@@ -17,7 +17,7 @@ public class GarlicBehaviour : MeleeWeaponBehaviour
         if(col.CompareTag("Enemy") && !markedEnemies.Contains(col.gameObject))
         {
             ZombieStats enemy = col.GetComponent<ZombieStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
 
             markedEnemies.Add(col.gameObject); //Gegner wird markiert und kann nicht mit diesem Garlic wieder beschaedigt werden
         }
@@ -25,7 +25,7 @@ public class GarlicBehaviour : MeleeWeaponBehaviour
         {
             if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 
                 markedEnemies.Add(col.gameObject) ;
             }

@@ -120,7 +120,7 @@ public class EnemySpawner : MonoBehaviour
             maxEnemiesReached = false;
         }
     }
-    public void OnEmeyKilled()
+    public void OnEnemyKilled()
     {
         enemiesAlive--;
     }

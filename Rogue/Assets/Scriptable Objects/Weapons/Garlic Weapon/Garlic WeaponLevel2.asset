@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fe69bc0a410f0742a251f03b83389d8, type: 3}
-  m_Name: Katana Weapon
+  m_Name: Garlic WeaponLevel2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3071567267792098731, guid: c5eef00492c0b2f4fae33ad01f7c8eba, type: 3}
+  prefab: {fileID: 3160563038669239094, guid: b355b06bac77d384bb6a3d5924d10856, type: 3}
   damage: 5
-  speed: 10
-  cooldownDuration: 2
-  pierce: 1
+  speed: 0
+  cooldownDuration: 2.5
+  pierce: 0
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 1929462573, guid: 2c9a3a71d5da83e4ea72bfd444853b95, type: 3}
