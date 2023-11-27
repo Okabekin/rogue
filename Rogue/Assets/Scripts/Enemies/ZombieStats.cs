@@ -7,9 +7,15 @@ public class ZombieStats : MonoBehaviour
     public EnemyScriptableObjects enemyData;
 
     //Aktuelle Stats
-    float currentMoveSpeed;
-    float currentHealth;
-    float currentDamage;
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentDamage;
+
+    public float despawnDistance = 20f;
+    Transform Player;
 
     void Awake()
     {
@@ -17,6 +23,20 @@ public class ZombieStats : MonoBehaviour
         currentHealth = enemyData.MaxHealth;
         currentDamage = enemyData.Damage;
     }
+
+    void Start()
+    {
+        Player = FindObjectOfType<PlayerStats>().transform;
+
+    }
+    void Update()
+    {
+        if(Vector2.Distance(transform.position, Player.position) >= despawnDistance)
+        {
+            ReturnEnemy();
+        }
+    }
+
     public void TakeDamage(float dmg)
     {
         currentHealth -= dmg;
@@ -39,5 +59,15 @@ public class ZombieStats : MonoBehaviour
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();  
             player.TakeDamage(currentDamage); //current dmg in case of multipliers
         }
+    }
+    private void OnDestroy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        es.OnEmeyKilled();
+    }
+    void ReturnEnemy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        transform.position = Player.position + es.relativeSpawnPoints[Random.Range(0, es.relativeSpawnPoints.Count)].position;
     }
 }

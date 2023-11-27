@@ -14,6 +14,6 @@ public class KatanaBehaviour : ProjectileWeaponBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * weaponData.Speed * Time.deltaTime; //Movement of Katana
+        transform.position += direction * currentSpeed * Time.deltaTime; //Movement of Katana
     }
 }
