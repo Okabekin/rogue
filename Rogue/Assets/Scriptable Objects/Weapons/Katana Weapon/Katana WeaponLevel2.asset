@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe69bc0a410f0742a251f03b83389d8, type: 3}
   m_Name: Katana WeaponLevel2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8068343705470659268, guid: 3f0a1b6620d7d6c40b0465e15cb30df7, type: 3}
+  prefab: {fileID: 3071567267792098731, guid: 9ce1958f687b9984a89b7af3e25ee9a9, type: 3}
   damage: 5
   speed: 15
   cooldownDuration: 2
