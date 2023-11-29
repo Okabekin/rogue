@@ -19,4 +19,6 @@ MonoBehaviour:
   pierce: 1
   level: 1
   nextLevelPrefab: {fileID: 8068343705470659268, guid: 3f0a1b6620d7d6c40b0465e15cb30df7, type: 3}
+  name: Katana
+  description: Shoots Katanas in the direction you are facing.
   icon: {fileID: 1167576149, guid: 53016cc830a653c4d9a3cc142adecddf, type: 3}
