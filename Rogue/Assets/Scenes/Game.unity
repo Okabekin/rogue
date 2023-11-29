@@ -1293,11 +1293,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1378895877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &322285492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7260,9 +7260,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 68.6, y: -68.6}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1539760717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7611,7 +7611,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menu
+          m_StringArgument: Title Screen
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1591720683
@@ -8140,11 +8140,20 @@ MonoBehaviour:
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Red Zombie
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
+    waveQuota: 0
+    spawnInterval: 3
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
   maxEnemiesAllowed: 4
   maxEnemiesReached: 0
-  waveInterval: 3
+  waveInterval: 5
   relativeSpawnPoints:
   - {fileID: 515940723}
   - {fileID: 1810293134}
@@ -8362,11 +8371,11 @@ RectTransform:
   - {fileID: 467628154}
   m_Father: {fileID: 2057487769}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: 244.7}
-  m_SizeDelta: {x: 1, y: 18.602}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 26.2604}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1761764598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8497,7 +8506,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menu
+          m_StringArgument: Title Screen
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1800180828
@@ -8913,9 +8922,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1909965403
 GameObject:
   m_ObjectHideFlags: 0
@@ -9681,7 +9690,7 @@ MonoBehaviour:
   - {fileID: 646381992}
   - {fileID: 616422904}
   - {fileID: 983971830}
-  timeLimit: 75
+  timeLimit: 9999
   stopwatchDisplay: {fileID: 1873261194}
   isGameOver: 0
   choosingUpgrade: 0
@@ -9982,9 +9991,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1539760716}
+  - {fileID: 1761764597}
   - {fileID: 813584528}
   - {fileID: 1873261196}
-  - {fileID: 1761764597}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
