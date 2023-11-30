@@ -125,6 +125,7 @@ public class PlayerStats : MonoBehaviour
     public int experience = 0;
     public int level = 1;
     public int experienceCap;
+    public int levelCap = 8;
 
     //Class for defining level range and cap increase
     [System.Serializable]
@@ -218,8 +219,11 @@ public class PlayerStats : MonoBehaviour
         Recover();
     }
 
+    
+
     public void IncreaseExperience(int amount)
     {
+        if (level >= levelCap) return;
         experience += amount;
         LevelUpChecker();
         UpdateExpBar();

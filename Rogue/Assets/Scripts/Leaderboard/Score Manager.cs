@@ -15,6 +15,7 @@ public class ScoreManager : MonoBehaviour
     //Push the values on the leaderboard
     public void SubmitScore()
     {
+
         submitScoreEvent.Invoke(inputName.text, int.Parse(inputScore.text));
     }
 

@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        score--;
         StartCoroutine(time());
     }
 

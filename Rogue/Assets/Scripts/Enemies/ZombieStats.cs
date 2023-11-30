@@ -43,7 +43,9 @@ public class ZombieStats : MonoBehaviour
 
         if (currentHealth <=0)
         {
+            
             Kill();
+            
         }
     }
     public void Kill()

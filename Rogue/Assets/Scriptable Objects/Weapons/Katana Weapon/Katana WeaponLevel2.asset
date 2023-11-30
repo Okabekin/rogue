@@ -18,7 +18,7 @@ MonoBehaviour:
   cooldownDuration: 2
   pierce: 2
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 8068343705470659268, guid: 8efa2ebe1fceabd4bafa36f6e38a33fd, type: 3}
   name: Katana lvl 2
-  description: Speed is up by 5
+  description: Speed is up by 5 + Pierce
   icon: {fileID: 1167576149, guid: 53016cc830a653c4d9a3cc142adecddf, type: 3}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 
@@ -26,7 +27,9 @@ public class MeleeWeaponBehaviour : MonoBehaviour
 
     public float GetCurrentDamage()
     {
+        
         return currentDamage *= FindObjectOfType<PlayerStats>().CurrentMight;
+        
     }
 
 
