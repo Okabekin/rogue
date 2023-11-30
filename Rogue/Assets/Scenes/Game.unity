@@ -11561,9 +11561,13 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Zombie
-      enemyCount: 5
+      enemyCount: 3
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Skeleton
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0

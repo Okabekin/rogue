@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b5ddb7aa5802344fb43c9017771acf0, type: 3}
-  m_Name: Red Zombie Enemy
+  m_Name: Skeleton Enemie
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  maxHealth: 30
-  damage: 30
+  moveSpeed: 1.5
+  maxHealth: 50
+  damage: 50

@@ -16,7 +16,7 @@ MonoBehaviour:
   damage: 5
   speed: 15
   cooldownDuration: 2
-  pierce: 1
+  pierce: 2
   level: 2
   nextLevelPrefab: {fileID: 0}
   name: Katana lvl 2
