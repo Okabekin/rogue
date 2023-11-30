@@ -11697,7 +11697,7 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Zombie
-      enemyCount: 4
+      enemyCount: 3
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
     - enemyName: Zombie
@@ -11732,46 +11732,50 @@ MonoBehaviour:
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Zombie
-      enemyCount: 6
+      enemyCount: 4
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
+    waveQuota: 0
+    spawnInterval: 0
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Zombie
+      enemyCount: 8
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
+    waveQuota: 0
+    spawnInterval: 0
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Zombie
+      enemyCount: 9
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
     - enemyName: Zombiered
       enemyCount: 2
       spawnCount: 0
-      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
+      enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
     waveQuota: 0
     spawnInterval: 0
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Zombie
-      enemyCount: 1
-      spawnCount: 0
-      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
-    - enemyName: Zombiered
-      enemyCount: 4
-      spawnCount: 0
-      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
-    waveQuota: 0
-    spawnInterval: 0
-    spawnCount: 0
-  - waveName: Wave 2
-    enemyGroups:
-    - enemyName: Zombie
-      enemyCount: 10
-      spawnCount: 0
-      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
-    - enemyName: Zombiered
       enemyCount: 5
-      spawnCount: 0
-      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
-    waveQuota: 0
-    spawnInterval: 0
-    spawnCount: 0
-  - waveName: Wave 2
-    enemyGroups:
-    - enemyName: Zombie
-      enemyCount: 0
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
     - enemyName: Zombiered
@@ -11788,15 +11792,15 @@ MonoBehaviour:
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Zombie
-      enemyCount: 0
+      enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
     - enemyName: Zombiered
-      enemyCount: 0
+      enemyCount: 4
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
     - enemyName: Zombiered
-      enemyCount: 15
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
     waveQuota: 0
@@ -11819,11 +11823,62 @@ MonoBehaviour:
     waveQuota: 0
     spawnInterval: 0
     spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Zombie
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 8
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 21262d5e53fb4f74794ac82383c72742, type: 3}
+    waveQuota: 0
+    spawnInterval: 0
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Zombie
+      enemyCount: 0
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 0
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 6c80ef8216134d94a8c5b90b6682ac56, type: 3}
+    waveQuota: 0
+    spawnInterval: 0
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Zombie
+      enemyCount: 0
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 97959abd8b7abe84aac9fbc4118e75ff, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 5661ad3d04f693c4987b0df2c4a4ead0, type: 3}
+    - enemyName: Zombiered
+      enemyCount: 4
+      spawnCount: 0
+      enemyPrefab: {fileID: 8942853501490592335, guid: 6c80ef8216134d94a8c5b90b6682ac56, type: 3}
+    waveQuota: 0
+    spawnInterval: 0
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
   maxEnemiesAllowed: 50
   maxEnemiesReached: 0
-  waveInterval: 10
+  waveInterval: 15
   relativeSpawnPoints:
   - {fileID: 515940723}
   - {fileID: 1810293134}

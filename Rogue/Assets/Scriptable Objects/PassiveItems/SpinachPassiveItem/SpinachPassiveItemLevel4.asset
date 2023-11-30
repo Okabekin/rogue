@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c44a39dc77cdd847aa33dc97e7038c6, type: 3}
   m_Name: SpinachPassiveItemLevel4
   m_EditorClassIdentifier: 
-  multiplier: 200
+  multiplier: 25
   level: 4
   nextLevelPrefab: {fileID: 1005892524715940144, guid: 7d505b0b703b4474193910e954f4f452, type: 3}
   name: Spinach Level 4
-  description: Increases Might by 200%
+  description: Increases Might by 25%
   icon: {fileID: -387055610, guid: 5f9d17d09084075478d0774f1332062c, type: 3}
