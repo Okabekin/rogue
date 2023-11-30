@@ -39,8 +39,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI chosenCharacterName;
     public TextMeshProUGUI levelReachedDisplay;
     public TextMeshProUGUI timeSurvivedDisplay;
+    public TextMeshProUGUI timeSurvivedDisplayLeaderboard;
     public List<Image> chosenWeaponsUI = new List<Image>(6);
     public List<Image> chosenPassiveItemsUI = new List<Image>(6);
+    public int score = 0;
 
     [Header("Stopwatch")]
     public float timeLimit; // The time limit in seconds
@@ -73,8 +75,28 @@ public class GameManager : MonoBehaviour
         DisableScreens();
     }
 
+    public void Start()
+    {
+        StartCoroutine(time());
+    }
+
+    IEnumerator time()
+    {
+        while (true)
+        {
+            timeCount();
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    void timeCount()
+    {
+        score += 1;
+    }
+
     void Update()
     {
+        
 
         //Code for the different states
         switch (currentState)
@@ -109,6 +131,7 @@ public class GameManager : MonoBehaviour
                 Debug.LogWarning("STATE DOES NOT EXIST");
                 break;
         }
+
     }
 
     //Method to change game states
@@ -165,11 +188,14 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        timeSurvivedDisplay.text = stopwatchDisplay.text;
+        timeSurvivedDisplayLeaderboard.text = score.ToString();
         ChangeState(GameState.GameOver);
+        StopCoroutine(time());
     }
     void DisplayResults()
     {
-        timeSurvivedDisplay.text = stopwatchDisplay.text;
+
         resultsScreen.SetActive(true);
     }
 
@@ -239,6 +265,7 @@ public class GameManager : MonoBehaviour
         //update stopwatch text to display the time
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
 
     public void StartLevelUp()
     {
